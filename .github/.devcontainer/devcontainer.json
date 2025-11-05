@@ -4,6 +4,9 @@
 	"mounts": [
 		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"
 	],
+	"containerEnv": {
+		"PIPX_USE_EMOJI": "0"
+	},
 	"postCreateCommand": "zsh $(pwd)/.devcontainer/post-create.zsh",
 	"customizations": {
 		"vscode": {
