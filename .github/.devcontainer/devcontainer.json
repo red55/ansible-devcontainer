@@ -7,7 +7,7 @@
 	"containerEnv": {
 		"PIPX_USE_EMOJI": "0"
 	},
-	"onCreateCommand": "zsh $(pwd)/.devcontainer/post-create.zsh",
+	"onCreateCommand": "[ -f $(pwd)/.devcontainer/post-create.zsh ] && zsh $(pwd)/.devcontainer/post-create.zsh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -40,7 +40,8 @@
 		"ghcr.io/devcontainers-extra/features/ansible": {
 			"version": "2.19.3",
 			"injections": "mitogen paramiko ansible-lint mitogen"
-		}
+		},
+		"ghcr.io/red55/devcontainer-features/default-ansible-config:latest": {}
 	},
 	"initializeCommand": ""
 }
