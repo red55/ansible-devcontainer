@@ -1,0 +1,42 @@
+{
+	"name": "ansible",
+	"image": "mcr.microsoft.com/devcontainers/python:2-3-bookworm",
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind"
+	],
+	"postCreateCommand": "zsh $(pwd)/.devcontainer/post-create.zsh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.ansible",
+				"bmarkovic.haproxy",
+				"hangxingliu.vscode-nginx-conf-hint",
+				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker-russian",
+				"hashicorp.terraform",
+				"hashicorp.hcl",
+				"ms-python.isort",
+				"davidanson.vscode-markdownlint",
+				"foxundermoon.shell-format",
+				"timonwong.shellcheck",
+				"coolbear.systemd-unit-file",
+				"qcz.text-power-tools",
+				"xshrim.txt-syntax",
+				"zunix.edgerouter-conf",
+				"ms-vscode.vscode-websearchforcopilot",
+				"redhat.vscode-yaml",
+				"github.vscode-github-actions"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {
+			"theme": "bira",
+			"plugins": "git sudo ansible"
+		},
+		"ghcr.io/devcontainers-extra/features/ansible": {
+			"version": "2.19.3",
+			"injections": "mitogen paramiko ansible-lint mitogen"
+		}
+	}
+}
