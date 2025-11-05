@@ -7,7 +7,7 @@
 	"containerEnv": {
 		"PIPX_USE_EMOJI": "0"
 	},
-	"postCreateCommand": "[ -f /default-ansible-config.zsh ] && zsh /default-ansible-config.zsh;[ -f $(pwd)/.devcontainer/post-create.zsh ] && zsh $(pwd)/.devcontainer/post-create.zsh",
+	"postCreateCommand": "[ -f /default-ansible-config.zsh ] && zsh /default-ansible-config.zsh;[ -f $(pwd)/.devcontainer/post-create.zsh ] && zsh $(pwd)/.devcontainer/post-create.zsh || true",
 	"customizations": {
 		"vscode": {
 			"extensions": [
