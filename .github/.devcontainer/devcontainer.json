@@ -7,7 +7,7 @@
 	"containerEnv": {
 		"PIPX_USE_EMOJI": "0"
 	},
-	"postCreateCommand": "zsh $(pwd)/.devcontainer/post-create.zsh",
+	"onCreateCommand": "zsh $(pwd)/.devcontainer/post-create.zsh",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -41,5 +41,6 @@
 			"version": "2.19.3",
 			"injections": "mitogen paramiko ansible-lint mitogen"
 		}
-	}
+	},
+	"initializeCommand": ""
 }
