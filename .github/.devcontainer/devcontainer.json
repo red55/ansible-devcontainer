@@ -42,6 +42,5 @@
 			"injections": "mitogen paramiko ansible-lint mitogen"
 		},
 		"ghcr.io/red55/devcontainer-features/default-ansible-config:latest": {}
-	},
-	"initializeCommand": ""
+	}
 }
