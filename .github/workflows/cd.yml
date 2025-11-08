@@ -16,7 +16,7 @@ jobs:
   build-and-push:
     strategy:
       matrix:
-        ansible: ["v2.19.3", "v2.18.10"]
+        ansible: ["v2.20.0", "v2.19.3", "v2.18.10"]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
