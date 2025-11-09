@@ -28,7 +28,8 @@
 				"zunix.edgerouter-conf",
 				"ms-vscode.vscode-websearchforcopilot",
 				"redhat.vscode-yaml",
-				"github.vscode-github-actions"
+				"github.vscode-github-actions",
+				"ms-vscode.hexeditor"
 			]
 		}
 	},
@@ -44,3 +45,4 @@
 		"ghcr.io/red55/devcontainer-features/default-ansible-config:latest": {}
 	}
 }
+
