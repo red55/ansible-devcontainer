@@ -40,8 +40,9 @@
 		},
 		"ghcr.io/devcontainers-extra/features/ansible": {
 			"version": "2.19.3",
-			"injections": "mitogen paramiko ansible-lint"
+			"injections": "mitogen paramiko ansible-lint kubernetes"
 		},
 		"ghcr.io/red55/devcontainer-features/default-ansible-config:latest": {}
 	}
 }
+
